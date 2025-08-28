@@ -24,9 +24,9 @@
     <!-- NAVBAR SECTION -->
     <nav class="bg-white shadow-md">
         <div class="mx-auto px-4 sm:px-6 lg:px-8 py-3">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex flex-col sm:flex-row justify-between items-center sm:h-16">
                 <!-- Left side - Logo and Website name -->
-                <div class="flex items-center space-x-3">
+                <div class="flex items-center space-x-3 mb-4 sm:mb-0">
                     <img src="assets/Logo-site-logo.svg" alt="Emergency Service Logo">
                    
                 </div>
@@ -34,20 +34,20 @@
                 <!-- Right side - Heart icon, coin count, and copy count -->
                 <div class="flex items-center space-x-4">
                     <!-- Heart icon -->
-                    <div class="flex items-center justify-center gap-2 bg-green-100 h-10 w-[120px] rounded-full">
-                        <span class="text-[16px] font-bold text-gray-900 app-heart-count">0</span>
+                    <div class="flex items-center justify-center gap-2 bg-green-100 h-10 w-24 sm:w-[120px] rounded-full">
+                        <span class="text-sm sm:text-[16px] font-bold text-gray-900 app-heart-count">0</span>
                         <img src="assets/heart.png" alt="Heart" class="h-5 w-5">
                     </div>
                     
                     <!-- Coin count -->
-                    <div class="flex items-center justify-center gap-2 bg-green-100 h-10 w-[120px] rounded-full">
-                        <span class="text-[16px] font-bold text-gray-900 app-coin-count">100</span>
+                    <div class="flex items-center justify-center gap-2 bg-green-100 h-10 w-24 sm:w-[120px] rounded-full">
+                        <span class="text-sm sm:text-[16px] font-bold text-gray-900 app-coin-count">100</span>
                         <img src="assets/coin.png" alt="Coin" class="h-5 w-5">
                     </div>
                     
                     <!-- Copy count -->
-                    <div class="flex items-center justify-center gap-2 bg-[#00A63E] text-white h-10 w-[120px] rounded-full">
-                        <span class="text-sm font-semibold app-copy-count">0 Copy</span>
+                    <div class="flex items-center justify-center gap-2 bg-[#00A63E] text-white h-10 w-24 sm:w-[120px] rounded-full">
+                        <span class="text-xs sm:text-sm font-semibold app-copy-count">0 Copy</span>
                     </div>
                 </div>
             </div>
@@ -63,12 +63,12 @@
             </div>
             
             <!-- Section Title -->
-            <h1 class="text-[40px]  font-bold hind-madurai-bold mb-2">
+            <h1 class="text-[28px] sm:text-[40px] font-bold hind-madurai-bold mb-2">
                 Emergency Service Directory
             </h1>
             
             <!-- Slogan at bottom center -->
-            <p class="text-[20px] hind-madurai-semibold  mx-auto">
+            <p class="text-base sm:text-[20px] hind-madurai-semibold mx-auto">
                 Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh
             </p>
         </div>
@@ -81,7 +81,7 @@
             <div class="flex flex-col lg:flex-row gap-8">
                 
                 <!-- LEFT COLUMN: Emergency Service Cards (70% width) -->
-                <div class="w-full lg:w-[70%] bg-white">
+                <div class="w-full lg:w-[70%]">
                     <!-- 3 Cards Per Row Grid -->
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         
@@ -99,11 +99,11 @@
                               </button>
                           </div>
                           <div class="mb-4">
-                            <h3 class="text-[24px] text-[#111111] hind-madurai-bold card-title">National Emergency Number</h3>
-                            <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                            <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">National Emergency Number</h3>
+                            <p class="text-base sm:text-[18px] text-[#5C5C5C]">National Emergency</p>
                           </div>
                           <div class="mb-6">
-                            <span class="text-[32px] font-bold text-[#111] card-phone-number">999</span>
+                            <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">999</span>
                             <div class="mt-2">
                               <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">All</span>
                             </div>
@@ -134,11 +134,11 @@
                             </button>
                           </div>
                           <div class="mb-4">
-                            <h3 class="text-[24px] text-[#111111] hind-madurai-bold card-title">Police Helpline Number</h3>
-                            <p class="text-[18px] text-[#5C5C5C]">Police</p>
+                            <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">Police Helpline Number</h3>
+                            <p class="text-base sm:text-[18px] text-[#5C5C5C]">Police</p>
                           </div>
                           <div class="mb-6">
-                            <span class="text-[32px] font-bold text-[#111] card-phone-number">999</span>
+                            <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">999</span>
                             <div class="mt-2">
                               <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">Police</span>
                             </div>
@@ -169,11 +169,11 @@
                             </button>
                           </div>
                           <div class="mb-4">
-                            <h3 class="text-[24px] text-[#111111] hind-madurai-bold card-title">Fire Service Number</h3>
-                            <p class="text-[18px] text-[#5C5C5C]">Fire Service</p>
+                            <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">Fire Service Number</h3>
+                            <p class="text-base sm:text-[18px] text-[#5C5C5C]">Fire Service</p>
                           </div>
                           <div class="mb-6">
-                            <span class="text-[32px] font-bold text-[#111] card-phone-number">999</span>
+                            <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">999</span>
                             <div class="mt-2">
                               <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">Fire</span>
                             </div>
@@ -204,11 +204,11 @@
                             </button>
                           </div>
                           <div class="mb-4">
-                            <h3 class="text-[24px] text-[#111111] hind-madurai-bold card-title">Ambulance Service</h3>
-                            <p class="text-[18px] text-[#5C5C5C]">Ambulance Service</p>
+                            <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">Ambulance Service</h3>
+                            <p class="text-base sm:text-[18px] text-[#5C5C5C]">Ambulance Service</p>
                           </div>
                           <div class="mb-6">
-                            <span class="text-[32px] font-bold text-[#111] card-phone-number">1994-999999</span>
+                            <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">1994-999999</span>
                             <div class="mt-2">
                               <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">Health</span>
                             </div>
@@ -240,11 +240,11 @@
                             </button>
                           </div>
                           <div class="mb-4">
-                            <h3 class="text-[24px] text-[#111111] hind-madurai-bold card-title">Women & Child Helpline</h3>
-                            <p class="text-[18px] text-[#5C5C5C]">Women & Child Helpline</p>
+                            <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">Women & Child Helpline</h3>
+                            <p class="text-base sm:text-[18px] text-[#5C5C5C]">Women & Child Helpline</p>
                           </div>
                           <div class="mb-6">
-                            <span class="text-[32px] font-bold text-[#111] card-phone-number">109</span>
+                            <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">109</span>
                             <div class="mt-2">
                               <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">Help</span>
                             </div>
@@ -275,11 +275,11 @@
                             </button>
                           </div>
                           <div class="mb-4">
-                            <h3 class="text-[24px] text-[#111111] hind-madurai-bold card-title">Anti-Corruption Helpline</h3>
-                            <p class="text-[18px] text-[#5C5C5C]">Anti-Corruption</p>
+                            <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">Anti-Corruption Helpline</h3>
+                            <p class="text-base sm:text-[18px] text-[#5C5C5C]">Anti-Corruption</p>
                           </div>
                           <div class="mb-6">
-                            <span class="text-[32px] font-bold text-[#111] card-phone-number">106</span>
+                            <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">106</span>
                             <div class="mt-2">
                               <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">Govt.</span>
                             </div>
@@ -310,11 +310,11 @@
                             </button>
                           </div>
                           <div class="mb-4">
-                            <h3 class="text-[24px] text-[#111111] hind-madurai-bold card-title">Electricity Helpline</h3>
-                            <p class="text-[18px] text-[#5C5C5C]">Electricity Outage</p>
+                            <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">Electricity Helpline</h3>
+                            <p class="text-base sm:text-[18px] text-[#5C5C5C]">Electricity Outage</p>
                           </div>
                           <div class="mb-6">
-                            <span class="text-[32px] font-bold text-[#111] card-phone-number">16216</span>
+                            <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">16216</span>
                             <div class="mt-2">
                               <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">Electricity</span>
                             </div>
@@ -345,11 +345,11 @@
                               </button>
                             </div>
                             <div class="mb-4">
-                              <h3 class="text-[24px] text-[#111111] hind-madurai-bold card-title">Brac Helpline</h3>
-                              <p class="text-[18px] text-[#5C5C5C]">Brac</p>
+                              <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">Brac Helpline</h3>
+                              <p class="text-base sm:text-[18px] text-[#5C5C5C]">Brac</p>
                             </div>
                             <div class="mb-6">
-                              <span class="text-[32px] font-bold text-[#111] card-phone-number">16445</span>
+                              <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">16445</span>
                               <div class="mt-2">
                                 <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">NGO</span>
                               </div>
@@ -380,11 +380,11 @@
                               </button>
                             </div>
                             <div class="mb-4">
-                              <h3 class="text-[24px] text-[#111111] hind-madurai-bold card-title">Bangladesh Railway Helpline</h3>
-                              <p class="text-[18px] text-[#5C5C5C]">Bangladesh Railway</p>
+                              <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">Bangladesh Railway Helpline</h3>
+                              <p class="text-base sm:text-[18px] text-[#5C5C5C]">Bangladesh Railway</p>
                             </div>
                             <div class="mb-6">
-                              <span class="text-[32px] font-bold text-[#111] card-phone-number">163</span>
+                              <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">163</span>
                               <div class="mt-2">
                                 <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">Travel</span>
                               </div>
