@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const callButtons = document.querySelectorAll('.card-call-button');
     
     // Get call history container and clear button
-    const callHistoryContainer = document.querySelector('.space-y-2');
+    const callHistoryContainer = document.querySelector(".call-history-list");
     const callHistoryClearButton = document.querySelector('.call-history-clear-button');
     
     // Function to get current time in format like "11:36:58 AM"
