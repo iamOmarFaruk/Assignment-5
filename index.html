@@ -83,25 +83,27 @@
                 <!-- LEFT COLUMN: Emergency Service Cards (70% width) -->
                 <div class="w-full lg:w-[70%] bg-white">
                     <!-- 3 Cards Per Row Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                         
                        
 
 
                         <!-- Card 1: National Emergency start -->
-                        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="bg-white rounded-lg shadow-md p-6">
                           <div class="flex justify-between items-start mb-4">
-                            <div class="bg-red-100 p-2 rounded-lg">
+                            <div class="bg-red-100 p-4 rounded-lg">
                               <img src="assets/emergency.png" alt="Emergency" class="h-8 w-8">
                             </div>
-                            <i class="far fa-heart text-gray-400 text-xl"></i>
+                            <button>
+                                <i class="far fa-heart text-gray-400 text-xl"></i>
+                              </button>
                           </div>
                           <div class="mb-4">
-                            <h3 class="text-xl font-bold text-gray-800">National Emergency Number</h3>
-                            <p class="text-sm text-gray-600">National Emergency</p>
+                            <h3 class="text-[24px] text-[#111111] hind-madurai-bold card-title">National Emergency Number</h3>
+                            <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
                           </div>
                           <div class="mb-6">
-                            <span class="text-4xl font-bold text-gray-800">999</span>
+                            <span class="text-[32px] font-bold text-[#111] card-phone-number">999</span>
                             <div class="mt-2">
                               <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">All</span>
                             </div>
@@ -113,7 +115,7 @@
                               Copy
                             </button>
                             <button
-                              class="flex-1 bg-green-500 text-white py-2 px-4 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors">
+                              class="flex-1 bg-[#00A63E] text-white py-2 px-4 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors card-call-button">
                               <i class="fas fa-phone-alt mr-2"></i>
                               Call
                             </button>
