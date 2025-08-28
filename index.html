@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Emergency Service Directory</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,30 +23,30 @@
 
     <!-- NAVBAR SECTION -->
     <nav class="bg-white shadow-md">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div class="mx-auto px-3 sm:px-6 lg:px-8 py-3">
             <div class="flex flex-col sm:flex-row justify-between items-center sm:h-16">
                 <!-- Left side - Logo and Website name -->
                 <div class="flex items-center space-x-3 mb-4 sm:mb-0">
-                    <img src="assets/Logo-site-logo.svg" alt="Emergency Service Logo">
+                    <img src="assets/Logo-site-logo.svg" alt="Emergency Service Logo" class="max-h-12">
                    
                 </div>
                 
                 <!-- Right side - Heart icon, coin count, and copy count -->
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2 sm:space-x-4">
                     <!-- Heart icon -->
-                    <div class="flex items-center justify-center gap-2 bg-green-100 h-10 w-24 sm:w-[120px] rounded-full">
-                        <span class="text-sm sm:text-[16px] font-bold text-gray-900 app-heart-count">0</span>
-                        <img src="assets/heart.png" alt="Heart" class="h-5 w-5">
+                    <div class="flex items-center justify-center gap-1 sm:gap-2 bg-green-100 h-9 sm:h-10 w-20 sm:w-[120px] rounded-full">
+                        <span class="text-xs sm:text-[16px] font-bold text-gray-900 app-heart-count">0</span>
+                        <img src="assets/heart.png" alt="Heart" class="h-4 sm:h-5 w-4 sm:w-5">
                     </div>
                     
                     <!-- Coin count -->
-                    <div class="flex items-center justify-center gap-2 bg-green-100 h-10 w-24 sm:w-[120px] rounded-full">
-                        <span class="text-sm sm:text-[16px] font-bold text-gray-900 app-coin-count">100</span>
-                        <img src="assets/coin.png" alt="Coin" class="h-5 w-5">
+                    <div class="flex items-center justify-center gap-1 sm:gap-2 bg-green-100 h-9 sm:h-10 w-20 sm:w-[120px] rounded-full">
+                        <span class="text-xs sm:text-[16px] font-bold text-gray-900 app-coin-count">100</span>
+                        <img src="assets/coin.png" alt="Coin" class="h-4 sm:h-5 w-4 sm:w-5">
                     </div>
                     
                     <!-- Copy count -->
-                    <div class="flex items-center justify-center gap-2 bg-[#00A63E] text-white h-10 w-24 sm:w-[120px] rounded-full">
+                    <div class="flex items-center justify-center gap-1 sm:gap-2 bg-[#00A63E] text-white h-9 sm:h-10 w-20 sm:w-[120px] rounded-full">
                         <span class="text-xs sm:text-sm font-semibold app-copy-count">0 Copy</span>
                     </div>
                 </div>
@@ -55,68 +55,68 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="text-white py-5 px-4 bg-[url('assets/hero-bg.svg')] bg-center bg-no-repeat bg-cover">
+    <section class="text-white py-4 sm:py-5 px-3 sm:px-4 bg-[url('assets/hero-bg.svg')] bg-center bg-no-repeat bg-cover hero-section">
         <div class="mx-auto text-center">
             <!-- Logo at top center -->
-            <div class="mb-2">
-                <img src="assets/logo-dark.svg" alt="Bangladesh Government Logo" class="h-20 w-20 mx-auto">
+            <div class="mb-1 sm:mb-2">
+                <img src="assets/logo-dark.svg" alt="Bangladesh Government Logo" class="h-16 sm:h-20 w-16 sm:w-20 mx-auto">
             </div>
             
             <!-- Section Title -->
-            <h1 class="text-[28px] sm:text-[40px] font-bold hind-madurai-bold mb-2">
+            <h1 class="text-[22px] sm:text-[40px] font-bold hind-madurai-bold mb-1 sm:mb-2">
                 Emergency Service Directory
             </h1>
             
             <!-- Slogan at bottom center -->
-            <p class="text-base sm:text-[20px] hind-madurai-semibold mx-auto">
+            <p class="text-sm sm:text-[20px] hind-madurai-semibold mx-auto px-2">
                 Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh
             </p>
         </div>
     </section>
 
     <!-- MAIN CONTENT SECTION WITH 2 COLUMNS -->
-    <section class="py-12 px-4">
-        <div class="mx-auto px-4">
+    <section class="py-6 sm:py-12 px-3 sm:px-4">
+        <div class="mx-auto px-2 sm:px-4">
             <!-- Two Column Layout with Flexbox -->
-            <div class="flex flex-col lg:flex-row gap-8">
+            <div class="flex flex-col lg:flex-row gap-6 sm:gap-8">
                 
                 <!-- LEFT COLUMN: Emergency Service Cards (70% width) -->
                 <div class="w-full lg:w-[70%]">
                     <!-- 3 Cards Per Row Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
                         
                        
 
 
                         <!-- Card 1 start -->
-                        <div class="bg-white rounded-lg shadow-md p-6 single-card">
-                          <div class="flex justify-between items-start mb-4">
-                            <div class="bg-red-100 p-4 rounded-lg">
-                              <img src="assets/emergency.png" alt="Emergency" class="h-8 w-8">
+                        <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 single-card">
+                          <div class="flex justify-between items-start mb-3 sm:mb-4">
+                            <div class="bg-red-100 p-3 sm:p-4 rounded-lg">
+                              <img src="assets/emergency.png" alt="Emergency" class="h-6 w-6 sm:h-8 sm:w-8">
                             </div>
                             <button>
-                                <i class="far fa-heart text-gray-400 text-xl"></i>
+                                <i class="far fa-heart text-gray-400 text-lg sm:text-xl"></i>
                               </button>
                           </div>
-                          <div class="mb-4">
-                            <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">National Emergency Number</h3>
-                            <p class="text-base sm:text-[18px] text-[#5C5C5C]">National Emergency</p>
+                          <div class="mb-3 sm:mb-4">
+                            <h3 class="text-lg sm:text-[24px] text-[#111111] hind-madurai-bold card-title">National Emergency Number</h3>
+                            <p class="text-sm sm:text-[18px] text-[#5C5C5C]">National Emergency</p>
                           </div>
-                          <div class="mb-6">
-                            <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">999</span>
-                            <div class="mt-2">
-                              <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">All</span>
+                          <div class="mb-4 sm:mb-6">
+                            <span class="text-xl sm:text-[32px] font-bold text-[#111] card-phone-number">999</span>
+                            <div class="mt-1 sm:mt-2">
+                              <span class="bg-gray-200 text-gray-700 text-xs sm:text-sm font-medium me-2 px-2 sm:px-3 py-1 sm:py-2 rounded-full">All</span>
                             </div>
                           </div>
-                          <div class="flex space-x-4">
+                          <div class="flex space-x-2 sm:space-x-4">
                             <button
-                              class="flex-1 border border-gray-300 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors">
-                              <i class="far fa-copy mr-2"></i>
+                              class="flex-1 border border-gray-300 text-gray-700 py-1 sm:py-2 px-2 sm:px-4 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors text-xs sm:text-base">
+                              <i class="far fa-copy mr-1 sm:mr-2"></i>
                               Copy
                             </button>
                             <button
-                              class="flex-1 bg-[#00A63E] text-white py-2 px-4 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors card-call-button">
-                              <i class="fas fa-phone-alt mr-2"></i>
+                              class="flex-1 bg-[#00A63E] text-white py-1 sm:py-2 px-2 sm:px-4 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors card-call-button text-xs sm:text-base">
+                              <i class="fas fa-phone-alt mr-1 sm:mr-2"></i>
                               Call
                             </button>
                           </div>
@@ -124,34 +124,34 @@
                         <!-- card 1 close -->
 
                         <!-- Card 2 start -->
-                        <div class="bg-white rounded-lg shadow-md p-6 single-card">
-                          <div class="flex justify-between items-start mb-4">
-                            <div class="bg-blue-100 p-4 rounded-lg">
-                              <img src="assets/police.png" alt="Police" class="h-8 w-8">
+                        <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 single-card">
+                          <div class="flex justify-between items-start mb-3 sm:mb-4">
+                            <div class="bg-blue-100 p-3 sm:p-4 rounded-lg">
+                              <img src="assets/police.png" alt="Police" class="h-6 w-6 sm:h-8 sm:w-8">
                             </div>
                             <button>
-                              <i class="far fa-heart text-gray-400 text-xl"></i>
+                              <i class="far fa-heart text-gray-400 text-lg sm:text-xl"></i>
                             </button>
                           </div>
-                          <div class="mb-4">
-                            <h3 class="text-xl sm:text-[24px] text-[#111111] hind-madurai-bold card-title">Police Helpline Number</h3>
-                            <p class="text-base sm:text-[18px] text-[#5C5C5C]">Police</p>
+                          <div class="mb-3 sm:mb-4">
+                            <h3 class="text-lg sm:text-[24px] text-[#111111] hind-madurai-bold card-title">Police Helpline Number</h3>
+                            <p class="text-sm sm:text-[18px] text-[#5C5C5C]">Police</p>
                           </div>
-                          <div class="mb-6">
-                            <span class="text-2xl sm:text-[32px] font-bold text-[#111] card-phone-number">999</span>
-                            <div class="mt-2">
-                              <span class="bg-gray-200 text-gray-700 text-sm font-medium me-2 px-3 py-2 rounded-full">Police</span>
+                          <div class="mb-4 sm:mb-6">
+                            <span class="text-xl sm:text-[32px] font-bold text-[#111] card-phone-number">999</span>
+                            <div class="mt-1 sm:mt-2">
+                              <span class="bg-gray-200 text-gray-700 text-xs sm:text-sm font-medium me-2 px-2 sm:px-3 py-1 sm:py-2 rounded-full">Police</span>
                             </div>
                           </div>
-                          <div class="flex space-x-4">
+                          <div class="flex space-x-2 sm:space-x-4">
                             <button
-                              class="flex-1 border border-gray-300 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors">
-                              <i class="far fa-copy mr-2"></i>
+                              class="flex-1 border border-gray-300 text-gray-700 py-1 sm:py-2 px-2 sm:px-4 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors text-xs sm:text-base">
+                              <i class="far fa-copy mr-1 sm:mr-2"></i>
                               Copy
                             </button>
                             <button
-                              class="flex-1 bg-[#00A63E] text-white py-2 px-4 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors card-call-button">
-                              <i class="fas fa-phone-alt mr-2"></i>
+                              class="flex-1 bg-[#00A63E] text-white py-1 sm:py-2 px-2 sm:px-4 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors card-call-button text-xs sm:text-base">
+                              <i class="fas fa-phone-alt mr-1 sm:mr-2"></i>
                               Call
                             </button>
                           </div>
@@ -413,51 +413,51 @@
 
                 <!-- RIGHT COLUMN: Call History (30% width) -->
                 <div class="w-full lg:w-[30%]">
-                    <div class="bg-white rounded-lg shadow-md p-6 h-full">
+                    <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 h-full">
                         <!-- Section Header -->
-                        <div class="flex justify-between items-center mb-6">
+                        <div class="flex justify-between items-center mb-4 sm:mb-6">
                             <div class="flex items-center">
-                                <i class="fas fa-history text-gray-600 text-lg mr-2"></i>
-                                <h2 class="text-xl font-semibold text-gray-800">Call History</h2>
+                                <i class="fas fa-history text-gray-600 text-base sm:text-lg mr-2"></i>
+                                <h2 class="text-lg sm:text-xl font-semibold text-gray-800">Call History</h2>
                             </div>
-                            <div class="flex items-center justify-center gap-2 bg-[#00A63E] text-white h-10 px-4 rounded-full cursor-pointer hover:bg-[#008c36] transition-colors">
-                                <span class="text-sm font-semibold">Clear</span>
+                            <div class="flex items-center justify-center gap-1 sm:gap-2 bg-[#00A63E] text-white h-8 sm:h-10 px-3 sm:px-4 rounded-full cursor-pointer hover:bg-[#008c36] transition-colors">
+                                <span class="text-xs sm:text-sm font-semibold">Clear</span>
                             </div>
                             
                         </div>
                         
                         <!-- Call History List -->
-                        <div class="space-y-3">
+                        <div class="space-y-2 sm:space-y-3">
                             <!-- Call History Item 1 -->
-                            <div class="bg-[#FAFAFA] rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                            <div class="bg-[#FAFAFA] rounded-lg p-3 sm:p-4 hover:bg-gray-50 transition-colors">
                                 <div class="flex justify-between items-center">
                                     <div class="flex-1">
-                                        <h4 class="font-semibold text-gray-800 text-sm mb-1">Fire Service Number</h4>
-                                        <p class="text-sm text-gray-600">999</p>
+                                        <h4 class="font-semibold text-gray-800 text-xs sm:text-sm mb-1">Fire Service Number</h4>
+                                        <p class="text-xs sm:text-sm text-gray-600">999</p>
                                     </div>
-                                    <span class="text-xs text-gray-500 ml-2">11:36:58 AM</span>
+                                    <span class="text-[10px] sm:text-xs text-gray-500 ml-2">11:36:58 AM</span>
                                 </div>
                             </div>
 
                             <!-- Call History Item 2 -->
-                            <div class="bg-[#FAFAFA] rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                            <div class="bg-[#FAFAFA] rounded-lg p-3 sm:p-4 hover:bg-gray-50 transition-colors">
                                 <div class="flex justify-between items-center">
                                     <div class="flex-1">
-                                        <h4 class="font-semibold text-gray-800 text-sm mb-1">National Emergency Number</h4>
-                                        <p class="text-sm text-gray-600">1994-999999</p>
+                                        <h4 class="font-semibold text-gray-800 text-xs sm:text-sm mb-1">National Emergency Number</h4>
+                                        <p class="text-xs sm:text-sm text-gray-600">1994-999999</p>
                                     </div>
-                                    <span class="text-xs text-gray-500 ml-2">11:36:58 AM</span>
+                                    <span class="text-[10px] sm:text-xs text-gray-500 ml-2">11:36:58 AM</span>
                                 </div>
                             </div>
 
                             <!-- Call History Item 3 -->
-                            <div class="bg-[#FAFAFA] rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                            <div class="bg-[#FAFAFA] rounded-lg p-3 sm:p-4 hover:bg-gray-50 transition-colors">
                                 <div class="flex justify-between items-center">
                                     <div class="flex-1">
-                                        <h4 class="font-semibold text-gray-800 text-sm mb-1">Fire Service Number</h4>
-                                        <p class="text-sm text-gray-600">999</p>
+                                        <h4 class="font-semibold text-gray-800 text-xs sm:text-sm mb-1">Fire Service Number</h4>
+                                        <p class="text-xs sm:text-sm text-gray-600">999</p>
                                     </div>
-                                    <span class="text-xs text-gray-500 ml-2">11:36:58 AM</span>
+                                    <span class="text-[10px] sm:text-xs text-gray-500 ml-2">11:36:58 AM</span>
                                 </div>
                             </div>
 
