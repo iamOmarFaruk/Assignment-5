@@ -44,4 +44,53 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // ========================================
+    // COPY COUNT TASK
+    // ========================================
+    
+    // Get the copy count element from navigation
+    const copyCountElement = document.querySelector('.app-copy-count');
+    
+    // Get all copy buttons on the page
+    const copyButtons = document.querySelectorAll('.card-copy-button');
+    
+    // Loop through each copy button and add click event
+    copyButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            
+            // Find the card that contains this button
+            const card = button.closest('.single-card');
+            
+            // Get the card title and phone number from this card
+            const cardTitle = card.querySelector('.card-title').textContent;
+            const cardPhoneNumber = card.querySelector('.card-phone-number').textContent;
+            
+            // Copy phone number to clipboard
+            navigator.clipboard.writeText(cardPhoneNumber).then(function() {
+                
+                // Show alert with card title and phone number
+                alert(cardTitle + ' - ' + cardPhoneNumber + ' copied');
+                
+                // Get current copy count and convert to number
+                let currentCopyCount = parseInt(copyCountElement.textContent);
+                
+                // Increase copy count by 1
+                currentCopyCount = currentCopyCount + 1;
+                
+                // Update the copy count display with proper format
+                if (currentCopyCount === 1) {
+                    copyCountElement.textContent = currentCopyCount + ' Copy';
+                } else {
+                    copyCountElement.textContent = currentCopyCount + ' Copies';
+                }
+                
+            }).catch(function() {
+                // If clipboard fails, still show alert
+                alert(cardTitle + ' - ' + cardPhoneNumber + ' copied');
+                console.log('Clipboard not available, but alert shown');
+            });
+            
+        });
+    });
+    
 });
