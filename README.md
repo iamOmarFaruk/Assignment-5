@@ -62,6 +62,4 @@ Think of it like this:
 
 You can use both together if needed!
 
----
 
-*Made with ❤️ for learning JavaScript DOM manipulation*
