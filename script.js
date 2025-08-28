@@ -93,4 +93,91 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // ========================================
+    // CALL TASK
+    // ========================================
+    
+    // Get the coin count element from navigation
+    const coinCountElement = document.querySelector('.app-coin-count');
+    
+    // Get all call buttons on the page
+    const callButtons = document.querySelectorAll('.card-call-button');
+    
+    // Get call history container and clear button
+    const callHistoryContainer = document.querySelector('.space-y-2');
+    const callHistoryClearButton = document.querySelector('.call-history-clear-button');
+    
+    // Function to get current time in format like "11:36:58 AM"
+    function getCurrentTime() {
+        const now = new Date();
+        return now.toLocaleTimeString('en-US', { 
+            hour12: true,
+            hour: '2-digit',
+            minute: '2-digit', 
+            second: '2-digit'
+        });
+    }
+    
+    // Function to add call to history
+    function addCallToHistory(cardTitle, phoneNumber) {
+        const currentTime = getCurrentTime();
+        
+        // Create new call history item using template literals
+        const newCallItem = `
+            <div class="bg-[#FAFAFA] rounded-lg p-3 sm:p-4 hover:bg-gray-50 transition-colors">
+                <div class="flex justify-between items-center">
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-gray-800 text-xs sm:text-sm mb-1">${cardTitle}</h4>
+                        <p class="text-xs sm:text-sm text-gray-600">${phoneNumber}</p>
+                    </div>
+                    <span class="text-[10px] sm:text-xs text-gray-500 ml-2">${currentTime}</span>
+                </div>
+            </div>
+        `;
+        
+        // Add new item to the top of call history
+        callHistoryContainer.insertAdjacentHTML('afterbegin', newCallItem);
+    }
+    
+    // Loop through each call button and add click event
+    callButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            
+            // Get current coin count
+            let currentCoinCount = parseInt(coinCountElement.textContent);
+            
+            // Check if user has enough coins (minimum 20 coins required)
+            if (currentCoinCount < 20) {
+                alert('Not enough coins! You need at least 20 coins to make a call.');
+                return;
+            }
+            
+            // Find the card that contains this button
+            const card = button.closest('.single-card');
+            
+            // Get the card title and phone number from this card
+            const cardTitle = card.querySelector('.card-title').textContent;
+            const cardPhoneNumber = card.querySelector('.card-phone-number').textContent;
+            
+            // Deduct 20 coins
+            currentCoinCount = currentCoinCount - 20;
+            
+            // Update coin count display
+            coinCountElement.textContent = currentCoinCount;
+            
+            // Show calling alert
+            alert('Calling ' + cardTitle + ' on ' + cardPhoneNumber);
+            
+            // Add this call to history
+            addCallToHistory(cardTitle, cardPhoneNumber);
+            
+        });
+    });
+    
+    // Clear call history when clear button is clicked
+    callHistoryClearButton.addEventListener('click', function() {
+        // Remove all call history items
+        callHistoryContainer.innerHTML = '';
+    });
+    
 });
